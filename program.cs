@@ -5,11 +5,8 @@ public class Program
 {
   public static void Main()
   {
-    PromptUser();
-
-  } //main curly
-public static void PromptUser(Bread breadquantity) // what am I taking in as parameters here?. Line 25 in Plant gh
-  {
+    Bread newBread = new Bread(); //because contsructor is a method. Parenthesis
+   
     Console.WriteLine("Welcome to my bakery! Would you like to purchase a loaf of bread or a pastry today? Press 'b' for bread; press 'p' for pastry");
     string userAnswer = Console.ReadLine();
 
@@ -83,8 +80,7 @@ public static void PromptUser(Bread breadquantity) // what am I taking in as par
     else
     {
       Console.WriteLine("Sorry, we didn't understand that. Please try again.");
-      PromptUser(quantity);
+      Main();
     }
   } //PromptUserBread curly
-
-} //program curly
+}
