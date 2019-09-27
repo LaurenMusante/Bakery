@@ -5,26 +5,26 @@ namespace myBakery
   class Bread
     {
       public int BreadPrice { get; set; }
-      public string BreadQuantity { get; set; }
+      public int BreadQuantity { get; set; }
 
-      public yourBread(breadAnswer)
-      {
-        BreadPrice = 5;
-        BreadQuantity = 0;
-      }
+        public Bread()
+        {
+          BreadPrice = 5;
+          BreadQuantity = 0;
+        }
 
     }
 
     class Pastry
     {
       public int PastryPrice { get; set; }
-      public string PastryQuantity { get; set; }
+      public int PastryQuantity { get; set; }
 
-    public yourPastry(pastryAnswer)
-    {
-      PastryPrice = 2;
-      PastryQuantity = 0;
-    }
+        public Pastry()
+        {
+          PastryPrice = 2;
+          PastryQuantity = 0;
+        }
 
     }
   }

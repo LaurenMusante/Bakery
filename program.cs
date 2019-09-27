@@ -1,14 +1,14 @@
 using System;
 using myBakery;
 
-class Program
+public class Program
 {
-  static void Main()
+  public static void Main()
   {
 
 
   } //main curly
-public static void PromptUser(quantity) // what am I taking in as parameters here?. Line 25 in Plant gh
+public static void PromptUser( int quantity) // what am I taking in as parameters here?. Line 25 in Plant gh
   {
     Console.WriteLine("Would you like to purchase a loaf of bread or a pastry today? Press 'b' for bread; press 'p' for pastry");
     string userAnswer = Console.ReadLine();
@@ -32,6 +32,12 @@ public static void PromptUser(quantity) // what am I taking in as parameters her
         {
           BreadQuantity.Add(breadAnswerInt); // add user's int bread answer to BreadQuantity (in the class definition) and do maths on it.
           BreadPrice = (BreadQuantity/2) * 5;
+          Console.WriteLine("Your total price is $" + BreadPrice + ".");
+        }
+        else if (breadAnswerInt % 2 == 1 && breadAnswerInt != 2 && breadAnswerInt !=1)
+        {
+          BreadQuantity.Add(breadAnswerInt); // add user's int bread answer to BreadQuantity (in the class definition) and do maths on it.
+          BreadPrice = ()(BreadQuantity/2) * 5) +5;
           Console.WriteLine("Your total price is $" + BreadPrice + ".");
         }
     }
@@ -59,6 +65,18 @@ public static void PromptUser(quantity) // what am I taking in as parameters her
         {
           PastryQuantity.Add(pastryAnswerInt);
           PastryPrice = (PastryQuantity/3 * 5);
+          Console.WriteLine("Your total price is $" + PastryPrice + ".");
+        }
+        else if (pastryAnswerInt % 3 == 1 && pastryAnswerInt !=3)
+        {
+          PastryQuantity.Add(pastryAnswerInt);
+          PastryPrice = ((PastryQuantity/3 * 5)) + 2;
+          Console.WriteLine("Your total price is $" + PastryPrice + ".");
+        }
+        else if (pastryAnswerInt % 3 == 0 && pastryAnswerInt !=3)
+        {
+          PastryQuantity.Add(pastryAnswerInt);
+          PastryPrice = ((PastryQuantity/3 * 5)) + 4 ;
           Console.WriteLine("Your total price is $" + PastryPrice + ".");
         }
     }
