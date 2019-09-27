@@ -21,29 +21,35 @@ namespace myBakery
           {
             BreadPrice = 10;
           }
-          else if (breadAnswerInt > 2 && breadAnswerInt %2 == 0)
+          else if (breadAnswerInt == 3)
           {
-            BreadPrice = (BreadAnswerInt/2) * 5;
-          }
-          else if (breadAnswerInt > 2 && breadAnswerInt %2 == 1)
-          {
-            BreadPrice = ((BreadAnswerInt/2) *5) +5; 
+            BreadPrice =10;
           }
         }
-        //now wwrite methods to calculate price and have them return the price. then call the method in the frontend and do the console.writeline up there. 
-
     }
-
     class Pastry
     {
       public int PastryPrice { get; set; }
-      public int PastryQuantity { get; set; }
 
         public Pastry()
         {
           PastryPrice = 2;
-          PastryQuantity = 0;
         }
-
+        calculatePastryPrice(int pastryAnswerInt)
+          {
+            if (PastryAnswerInt == 1)
+            {
+              PastryPrice = 2; 
+            }
+            else if (PastryAnswerInt == 2)
+            {
+              PastryPrice = 4;
+            }
+            else if (PastryAnswerInt == 3)
+            {
+              PastryPrice = 5;
+            }
+          }
     }
-}
+  }
+

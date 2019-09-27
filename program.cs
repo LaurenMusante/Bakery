@@ -11,18 +11,18 @@ public class Program
     string userAnswer = Console.ReadLine();
 
     if (userAnswer.ToLower() == "b" || userAnswer.ToLower() == "bread")
-    {
-      Console.WriteLine("Please enter how many loaves of bread you'd like to purchase.");
+    newBread.CalculateBreadPrice(int breadAnswerInt);
+    ConsoleWriteLine ("Your price is " + BreadPrice);
+    
+      Console.WriteLine("Please enter how many loaves of bread you'd like to purchase. We have a special: buy 2 loaves, get 1 free. Maximum purchase is 3 loaves");
       string breadAnswer = Console.ReadLine();
       int breadAnswerInt = int.Parse(breadAnswer);
         if (breadAnswerInt == 1)
         {
-          breadquantity.AddBread(); //??
           Console.WriteLine("Your total price is $5.");
         }
         else if (breadAnswerInt == 2)
         {
-          BreadQuantity.Add(breadAnswerInt); //??
           Console.WriteLine("You get an extra loaf on the house! You might only want 2 loaves. But you get 3 loaves for only $10!");
         }
         else if (breadAnswerInt % 2 == 0 && breadAnswerInt != 2)
