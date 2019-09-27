@@ -1,0 +1,4 @@
+/Users/lrn/Desktop/bakery/obj/Debug/netcoreapp2.2/bakery.csprojAssemblyReference.cache
+/Users/lrn/Desktop/bakery/obj/Debug/netcoreapp2.2/bakery.csproj.CoreCompileInputs.cache
+/Users/lrn/Desktop/bakery/obj/Debug/netcoreapp2.2/bakery.AssemblyInfoInputs.cache
+/Users/lrn/Desktop/bakery/obj/Debug/netcoreapp2.2/bakery.AssemblyInfo.cs
