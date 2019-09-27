@@ -5,12 +5,12 @@ public class Program
 {
   public static void Main()
   {
-
+    PromptUser();
 
   } //main curly
-public static void PromptUser( int quantity) // what am I taking in as parameters here?. Line 25 in Plant gh
+public static void PromptUser(Bread breadquantity) // what am I taking in as parameters here?. Line 25 in Plant gh
   {
-    Console.WriteLine("Would you like to purchase a loaf of bread or a pastry today? Press 'b' for bread; press 'p' for pastry");
+    Console.WriteLine("Welcome to my bakery! Would you like to purchase a loaf of bread or a pastry today? Press 'b' for bread; press 'p' for pastry");
     string userAnswer = Console.ReadLine();
 
     if (userAnswer.ToLower() == "b" || userAnswer.ToLower() == "bread")
@@ -20,7 +20,7 @@ public static void PromptUser( int quantity) // what am I taking in as parameter
       int breadAnswerInt = int.Parse(breadAnswer);
         if (breadAnswerInt == 1)
         {
-          BreadQuantity.Add(breadAnswerInt); //??
+          breadquantity.AddBread(); //??
           Console.WriteLine("Your total price is $5.");
         }
         else if (breadAnswerInt == 2)
@@ -32,13 +32,13 @@ public static void PromptUser( int quantity) // what am I taking in as parameter
         {
           BreadQuantity.Add(breadAnswerInt); // add user's int bread answer to BreadQuantity (in the class definition) and do maths on it.
           BreadPrice = (BreadQuantity/2) * 5;
-          Console.WriteLine("Your total price is $" + BreadPrice + ".");
+          Console.WriteLine("Bulk Discount! Your total price is $" + BreadPrice + ".");
         }
         else if (breadAnswerInt % 2 == 1 && breadAnswerInt != 2 && breadAnswerInt !=1)
         {
           BreadQuantity.Add(breadAnswerInt); // add user's int bread answer to BreadQuantity (in the class definition) and do maths on it.
-          BreadPrice = ()(BreadQuantity/2) * 5) +5;
-          Console.WriteLine("Your total price is $" + BreadPrice + ".");
+          BreadPrice = ((BreadQuantity/2) * 5) +5;
+          Console.WriteLine("Bulk discount! Your total price is $" + BreadPrice + ".");
         }
     }
     else if   (userAnswer.ToLower() == "p" || userAnswer.ToLower() == "pastry")
@@ -71,13 +71,13 @@ public static void PromptUser( int quantity) // what am I taking in as parameter
         {
           PastryQuantity.Add(pastryAnswerInt);
           PastryPrice = ((PastryQuantity/3 * 5)) + 2;
-          Console.WriteLine("Your total price is $" + PastryPrice + ".");
+          Console.WriteLine("Bulk Discount! Your total price is $" + PastryPrice + ".");
         }
         else if (pastryAnswerInt % 3 == 0 && pastryAnswerInt !=3)
         {
           PastryQuantity.Add(pastryAnswerInt);
           PastryPrice = ((PastryQuantity/3 * 5)) + 4 ;
-          Console.WriteLine("Your total price is $" + PastryPrice + ".");
+          Console.WriteLine("Bulk Discount! Your total price is $" + PastryPrice + ".");
         }
     }
     else

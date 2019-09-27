@@ -13,6 +13,11 @@ namespace myBakery
           BreadQuantity = 0;
         }
 
+        public void AddBread()
+        {
+          BreadQuantity ++;
+        }
+
     }
 
     class Pastry
@@ -27,4 +32,4 @@ namespace myBakery
         }
 
     }
-  }
+}
