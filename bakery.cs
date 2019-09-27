@@ -25,6 +25,10 @@ namespace myBakery
           {
             BreadPrice =10;
           }
+          else 
+          {
+            Console.WriteLine("Sorry. We have a maximum purchase of 3 items.");
+          }
           return BreadPrice;
         }
     }
@@ -49,6 +53,10 @@ namespace myBakery
             else if (pastryAnswerInt == 3)
             {
               PastryPrice = 5;
+            }
+            else 
+            {
+              Console.WriteLine("Sorry. We have a maximum purchase of 3 items.");
             }
             return PastryPrice;
           }
