@@ -11,7 +11,7 @@ namespace myBakery
           BreadPrice = 5;
         }
 
-        calculateBreadPrice(int breadAnswerInt)
+        public int calculateBreadPrice(int breadAnswerInt)
         {
           if (breadAnswerInt == 1)
           {
@@ -25,6 +25,7 @@ namespace myBakery
           {
             BreadPrice =10;
           }
+          return BreadPrice;
         }
     }
     class Pastry
@@ -35,20 +36,21 @@ namespace myBakery
         {
           PastryPrice = 2;
         }
-        calculatePastryPrice(int pastryAnswerInt)
+        public int calculatePastryPrice(int pastryAnswerInt)
           {
-            if (PastryAnswerInt == 1)
+            if (pastryAnswerInt == 1)
             {
               PastryPrice = 2; 
             }
-            else if (PastryAnswerInt == 2)
+            else if (pastryAnswerInt == 2)
             {
               PastryPrice = 4;
             }
-            else if (PastryAnswerInt == 3)
+            else if (pastryAnswerInt == 3)
             {
               PastryPrice = 5;
             }
+            return PastryPrice;
           }
     }
   }
