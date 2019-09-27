@@ -7,16 +7,12 @@ namespace myBakery
       public int BreadPrice { get; set; }
       public string BreadQuantity { get; set; }
 
-      public FirstBread()
+      public yourBread(breadAnswer)
       {
         BreadPrice = 5;
         BreadQuantity = 0;
       }
 
-      public string BuyTwo()
-      {
-        if
-      }
     }
 
     class Pastry
@@ -24,7 +20,7 @@ namespace myBakery
       public int PastryPrice { get; set; }
       public string PastryQuantity { get; set; }
 
-    public FirstPastry()
+    public yourPastry(pastryAnswer)
     {
       PastryPrice = 2;
       PastryQuantity = 0;
